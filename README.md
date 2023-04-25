@@ -1,10 +1,10 @@
-# sit323-737-2023-t1-prac5p
+# sit323-737-2023-t1-prac7p
 
 ## Starting application
 
-Please not that the image `namanyash/sit323-737-2023-t1-prac7p` for Kubernetes deployment has been pushed to DockerHub
+Please not that the image `namanyash/sit323-737-2023-t1-prac7p` for Kubernetes deployment has been pushed to DockerHub.
 
-To start a Kubernetes deployment use the following command
+To start a Kubernetes deployment use the following command:
 
 `kubectl apply -f .\kubeDeploy.yaml`
 
