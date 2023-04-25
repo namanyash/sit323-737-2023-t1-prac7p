@@ -2,25 +2,28 @@
 
 ## Starting application
 
-TO install node modules run the following command
-`npm install`
+Please not that the image `namanyash/sit323-737-2023-t1-prac7p` for Kubernetes deployment has been pushed to DockerHub
 
-Run the following command to build and run the project using docker-compose
-`docker-compose up -d`
+To start a Kubernetes deployment use the following command
 
-To test connection use the to the following URL
-`http://localhost:8080/getToken`
+`kubectl apply -f .\kubeDeploy.yaml`
 
-## To test the health check
+> Wait for the Kubernetes pod to change its state to `Running` and then move on to the next steps. Get pod information using the `kubectl get pods` command.
 
-sh into the container using the following command
-`docker exec -it sit323-737-2023-t1-prac5p-web-1 sh`
+To start a Kubernetes service for the deployment use the following command
 
-Find the process ID of the node application using the following command
-`ss -lptn 'sport = :5000'`
+`kubectl apply -f .\kubeService.yaml`
 
-kill the procss using the following command
-`kill <pid>`
+Get the IP address for the service using the following command
 
-The process will be killed but restarted immediately.
-Check logs in docker container to view the process.
+`kubectl get services`
+
+> Access the Node application on the URL `http://<Service-IP-address>:8000/getToken`
+
+## In case of connection timeout
+
+> For Windows docker desktop users and in case of any issues when connecting to the service use the following command:
+
+`kubectl port-forward service/node-app-service 8000`
+
+Access the microservice on the url `http://localhost:8000/getToken`

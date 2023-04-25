@@ -1,5 +1,5 @@
 {
-  "name": "sit323-737-2023-t1-prac4c",
+  "name": "sit323-737-2023-t1-prac7p",
   "version": "1.0.0",
   "description": "sit323/737-2023-t1-prac4p",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namanyash/sit323-737-2023-t1-prac4c.git"
+    "url": "git+https://github.com/namanyash/sit323-737-2023-t1-prac7p.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/namanyash/sit323-737-2023-t1-prac4c/issues"
+    "url": "https://github.com/namanyash/sit323-737-2023-t1-prac7p/issues"
   },
-  "homepage": "https://github.com/namanyash/sit323-737-2023-t1-prac4c#readme",
+  "homepage": "https://github.com/namanyash/sit323-737-2023-t1-prac7p#readme",
   "dependencies": {
     "config": "^3.3.9",
     "cors": "^2.8.5",
